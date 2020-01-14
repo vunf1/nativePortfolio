@@ -1,0 +1,37 @@
+    <a target="_blank" href="https://www.linkedin.com/in/joao-maia/">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+
+    <a aria-controls="navbarContent" [attr.aria-expanded]="!collapsed" (click)="collapsed = !collapsed">
+      <mat-icon>menu</mat-icon>
+    </a>
+
+    <section class="navbar-collapse " [class.collapse]="collapsed" id="navbarContent">
+
+      <ul class="navbar-nav  bg-secondary w-50 float-right rounded mb-2 text-inside-grid-center">
+        <br>
+        <object ngbDropdown *ngFor="let title of navTitlesList">
+          <li>
+            <a class="btn" routerLink="/{{title}}" routerLinkActive="active" id="{{title}}" role="button">
+              {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
+            </a>
+
+          </li>
+          <br>
+          <!-- ngbDropdownToggle before this to trigger menu elements 'sections'
+      <aside ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+        <a class="dropdown-item" href="#" (click)="$event.preventDefault()">{{title}}</a>
+      </aside> -->
+
+        </object>
+
+  <mat-toolbar [ngClass]="triColor[2]" class="footer">
+      <!-- SideNav Footer  Block -->
+      <p style="font-size: 10px;" class="footer lead textCentered"><i id="desigTXT">Designed by: </i><a id="copyrights"
+          target="_blank" href="https://vunf1.coventry.domains"><strong>Myself </strong></a> </p>
+    </mat-toolbar>
+      </ul>
+
+    </section>

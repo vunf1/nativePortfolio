@@ -1,0 +1,25 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "../",
+    "types": ["node", "jasmine"]
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ],
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  },
+  "rxjs-no-internal": {
+    "severity": "error"
+  },
+  "rxjs-no-finnish": {
+    "severity": "error"
+  },
+  "deprecation": {
+    "severity": "warning"
+  },
+}

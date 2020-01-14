@@ -1,0 +1,49 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+
+body {
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.contentFixPaddiTopOnNav{padding-top: 10%!important;}
+.NocontentFixPaddiTopOnNav{margin-top: 0%!important;}
+.text-inside-grid-center {
+  text-align: center;
+}
+.text-inside-grid-right {
+  text-align: right;
+}
+.text-inside-grid-left {
+  text-align: left;
+}
+.text-inside-grid-justify{
+  text-align: justify;
+}
+.textCentered{
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.roundedIMG {
+  width: 50%;
+  border-radius: 60%;
+}
+
+
+/*
+* SYSTEM COLORS
+*/
+.blackBG {
+  background: #343a40!important;
+}
+
+.blueBG {
+  background: #1d354d!important;
+}
+.transparentBG{
+  background: transparent!important;
+}
